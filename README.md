@@ -12,6 +12,14 @@ The start script will start both the api server and the react app (in the develo
 
 The frontend is accessible at http://localhost:5173/.
 
+The frontend API base URL is configured with `VITE_API_BASE_URL`. For local development this defaults to:
+
+```bash
+VITE_API_BASE_URL=http://localhost:3000/api
+```
+
+Use a different value in other environments to point the app at the correct API host.
+
 ## API
 
 The api is accessible at `http://localhost:3000/api` and provides the following endpoints.

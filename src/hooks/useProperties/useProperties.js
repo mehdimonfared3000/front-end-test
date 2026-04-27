@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
-export const PROPERTIES_ENDPOINT = 'http://localhost:3000/api/properties';
+export const API_BASE_URL = process.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
+export const PROPERTIES_ENDPOINT = `${API_BASE_URL}/properties`;
 
 const useProperties = () => {
     const [properties, setProperties] = useState([]);
